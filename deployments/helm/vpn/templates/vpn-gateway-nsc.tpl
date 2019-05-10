@@ -20,6 +20,6 @@ spec:
           command: ['tail', '-f', '/dev/null']
 metadata:
   name: vpn-gateway-nsc
-  namespace: nsm-system
+  namespace: {{ .Release.Namespace }}
   annotations:
     ns.networkservicemesh.io: secure-intranet-connectivity

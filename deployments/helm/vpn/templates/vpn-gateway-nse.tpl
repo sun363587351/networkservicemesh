@@ -44,4 +44,4 @@ spec:
           image: {{ .Values.registry }}/networkservicemesh/nginx:latest
 metadata:
   name: vpn-gateway-nse
-  namespace: nsm-system
+  namespace: {{ .Release.Namespace }}

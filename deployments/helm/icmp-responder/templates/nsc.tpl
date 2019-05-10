@@ -17,6 +17,6 @@ spec:
           command: ['tail', '-f', '/dev/null']
 metadata:
   name: nsc-vpp
-  namespace: nsm-system
+  namespace: {{ .Release.Namespace }}
   annotations:
     ns.networkservicemesh.io: icmp-responder?app=icmp
